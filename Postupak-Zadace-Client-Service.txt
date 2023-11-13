@@ -36,12 +36,16 @@ Kopiraj s Merlina dane resurse
 
 + VSC:
 
-- nakon te dvije mape, u oba dva terminal client/service index.js zasebno unijeti naredbu:
-  'node index.js'
-
-- predati samo client index.js    // jer je tu rjesenje zadatka
+- nakon te dvije mape, u oba dva terminal client/service index.js zasebno unijeti naredbu: 'node primjer_file.js'
 
 HINT: opcenito, predati samo onaj file koji ima rješenje
+
+
+//                                                                   //
+	1. Dodati nova dva filma
+	2. Dohvatiti sve filmove
+	3. Onom filmu s najmanjom ocjenom treba dati ocjenu 9.9
+//                                                                   //
 
 <================================== ---------------------------------------------------- ==================================>
 
@@ -76,7 +80,7 @@ HINT: opcenito, predati samo onaj file koji ima rješenje
 
 -	2. Zadatak (1)
 		- Potrebno je dodati funkcionalnost koja racuna medijan ocjena unesenih filmova
-	-	- Nema input parametra
+		- Nema input parametra
 
 <================================== ---------------------------------------------------- ==================================>
 
