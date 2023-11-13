@@ -103,11 +103,4 @@ const movies_pt_2=[
     }
 ];
 
-const allMovies = [movies, movies_pt_2];
-
-export { allMovies };
-
-/*
 export { movies };
-export { movies_pt_2 };
-*/
