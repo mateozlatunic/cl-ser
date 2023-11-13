@@ -137,6 +137,8 @@ async function mojaLista() {
 /*
 
 // 1. //
+
+*/
 	function student_Dodaj_2_Filma() {
 		const postData = [{
 			id: 15,
@@ -158,7 +160,7 @@ async function mojaLista() {
 
 	student_Dodaj_2_Filma();
 
-*/
+
 
 // 2. //
 function student_Uzmi_Sve_Filmove() {
