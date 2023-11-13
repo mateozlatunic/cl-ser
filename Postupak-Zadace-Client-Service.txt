@@ -1,0 +1,83 @@
+<================================== -------------------- 02-zadaci --------------------- ==================================>
+
+Postupak:
+
++ KLIJENT:
+
+Postavite kursor konzole na desktop
+Kreiraj mapu „Client”
+Uđite u mapu
+komanda – npm init
+komanda – npm install axios
+Kreiraj file „index.js”
+Zatvori konzolu
+Otvori mapu u VSCodeu
+Kopiraj s Merlina dani resurs
+
+- HINT: posto se radi o Node.js, koristi se terminal naredbu za '.js': node primjer.js
+
+
++ SERVER:
+
+Postavite kursor konzole na desktop
+Kreiraj mapu „Service”
+Uđite u mapu
+Kreiraj mapu „handlers”
+Kreiraj mapu „models”
+komanda – npm init
+komanda – npm install express
+Kreiraj file „index.js”
+Zatvori konzolu
+Otvori mapu u VSCodeu
+Kopiraj s Merlina dane resurse
+
+- HINT: posto se radi o Node.js, koristi se terminal naredbu za '.js': node primjer.js
+
+
++ VSC:
+
+- nakon te dvije mape, u oba dva terminal client/service index.js zasebno unijeti naredbu:
+  'node index.js'
+
+- predati samo client index.js    // jer je tu rjesenje zadatka
+
+HINT: opcenito, predati samo onaj file koji ima rješenje
+
+<================================== ---------------------------------------------------- ==================================>
+
+
+
+
+
+
+
+<================================== -------------------- 03-zadaci --------------------- ==================================>
+
+-	1. Dodati nova dva filma
+-	2. Dohvatiti sve filmove
+-	3. Onom filmu s najmanjom ocjenom treba dati ocjenu 9.9
+
+<================================== ---------------------------------------------------- ==================================>
+
+
+
+
+
+
+
+
+
+<================================== -------------------- 04-zadaci --------------------- ==================================>
+
+-	1. Zadatak (1)
+		- Potrebno je dodati funkcionalnost koja dodaje listu filmova u model.
+		- Jedan film mora odgovarati prethodno definiranom modelu.
+		- Input je lista objekata.
+
+-	2. Zadatak (1)
+		- Potrebno je dodati funkcionalnost koja racuna medijan ocjena unesenih filmova
+	-	- Nema input parametra
+
+<================================== ---------------------------------------------------- ==================================>
+
+

@@ -15,15 +15,13 @@ router.route('/movie/:id')
   });
 
 
-router.route('movie/median')
+router.route('movie')
 .get((req, res) => {
   // metoda za medijan
-    const median = arr => {
-      const mid = Math.floor(arr.length / 2),
-        nums = [...arr].sort((a, b) => a - b);
-      return arr.length % 2 !== 0 ? nums[mid] : (nums[mid - 1] + nums[mid]) / 2;
-      };
-      console.log(median([postData.rating]));
+  const rating = req.query?.rating;
+  const movies = methods.getMovies(rating);
+  res.json(movies);
+
     // dohvati mi filmove
     // mapiraj mi filmove u jedan objekt
     // formula za medijan -> result

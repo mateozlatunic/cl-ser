@@ -72,4 +72,42 @@ const movies = [
     }
 ];
 
+const movies_pt_2=[
+    {
+        id: 20,
+        title: 'Star Wars',
+        genres: ['Fantasy'],
+        year: 1995,
+        rating: 9.5
+    },
+    {
+        id: 25,
+        title: 'Sharknado',
+        genres: ['Horror'],
+        year: 1990,
+        rating: 9.0
+    },
+    {
+        id: 30,
+        title: 'My cheating wife',
+        genres: ['Drama'],
+        year: 2000,
+        rating: 10
+    },
+    {
+        id: 35,
+        title: 'Best of me',
+        genres: ['Comedy'],
+        year: 1990,
+        rating: 9.0
+    }
+];
+
+const allMovies = [movies, movies_pt_2];
+
+export { allMovies };
+
+/*
 export { movies };
+export { movies_pt_2 };
+*/

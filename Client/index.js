@@ -86,6 +86,24 @@ function deleteMovie() {
 		.catch(error => { console.error('Error: ', error) });
 }
 
+// ASINKRONA FUNKCIJA
+
+async function mojaLista() {
+	try {
+	  // Simulirajte neku asinkronu operaciju, kao što je dohvaćanje podataka s udaljenog servera
+	  const data = await nekaAsinkronaOperacija();
+	  
+	  // Ovdje možete raditi nešto s dohvaćenim podacima, npr. obrada ili ispis
+	  console.log('Podaci su uspješno dohvaćeni:', data);
+	  
+	  return data; // Vratite podatke iz funkcije ako je potrebno
+	} catch (error) {
+	  console.error('Došlo je do greške:', error);
+	  throw error; // Bacite grešku (ako je potrebno) kako bi se daljnja obrada vršila na višoj razini
+	}
+  }
+  
+
 //MAIN
 //-------------------------------------- GET
 //getMovie();
@@ -157,7 +175,6 @@ changeMovieInfo()
 // ================================================================================================ //
 
 /*
-ZADACI-4:
 Uvod:
 Pokrenite klijent i servis
 
@@ -176,50 +193,11 @@ Kao dokaz da funkcionalnost radi, potrebno je pozvati funkcionalnost i ispisati 
 */
 
 // 1. //
-
-function dodajFilmove() {
-	const postData = [
-		{
-			id: 20,
-			title: 'Star Wars',
-			genres: ['Fantasy'],
-			year: 1995,
-			rating: 9.5
-		},
-		{
-			id: 25,
-			title: 'Sharknado',
-			genres: ['Horror'],
-			year: 1990,
-			rating: 9.0
-		},
-		{
-			id: 30,
-			title: 'My cheating wife',
-			genres: ['Drama'],
-			year: 2000,
-			rating: 10
-		},
-		{
-			id: 35,
-			title: 'Best of me',
-			genres: ['Comedy'],
-			year: 1990,
-			rating: 9.0
-		}
-	];
-
-	const obj = Object.fromEntries(postData.map(item => [item.id, item.title, item.genres, item.year, item.rating]));
-
-	const median = arr => {
-		const mid = Math.floor(arr.length / 2),
-		  nums = [...arr].sort((a, b) => a - b);
-		return arr.length % 2 !== 0 ? nums[mid] : (nums[mid - 1] + nums[mid]) / 2;
+/*
+async function addAllMovies() {
+	const postData = {
+		newMovie
 	  };
-	  console.log(median([postData.rating]));
-
-
-
 	const headers = {
 		'Content-Type': 'application/json',
 	  };
@@ -228,6 +206,24 @@ function dodajFilmove() {
 		.then(response => { console.log('Response:', response.data)})
 		.catch(error => { debugger; console.error('Error:', error)});
 }
+*/
 
-dodajFilmove()
+async function addAllMovies() {
+	try {
+	  const postData = {
+		newMovie
+	  };
+	  
+	  const headers = {
+		'Content-Type': 'application/json',
+	  };
+  
+	  const response = await axios.post(dataServiceBaseUrl + '/api/movie', postData, {headers: headers});
+	  console.log('Response:', response.data);
+	} catch (error) {
+	  debugger;
+	  console.error('Error:', error);
+	}
+  }
+  addAllMovies()
 
